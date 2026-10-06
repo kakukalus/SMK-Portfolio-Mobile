@@ -1,0 +1,9 @@
+/* CONTACT SAJA — kirim file ini + contact.html ke AI. */
+.contact-panel { border: 1px solid #e5e4e9; border-radius: var(--radius); background: var(--card); padding: 28px; }
+.contact-arrow { display: grid; place-items: center; width: 64px; height: 64px; background: #ede9f9; color: var(--primary); font-size: 2rem; border-radius: 50%; margin-bottom: 28px; }
+.contact-email { display: block; overflow-wrap: anywhere; color: var(--primary); font-size: 1.1rem; font-weight: bold; margin-bottom: 24px; }
+.contact-note { font-size: 0.75rem; margin: 24px 0 0; max-width: 430px; }
+@media (min-width: 760px) {
+  .contact-panel { padding: 44px; max-width: 760px; }
+  .contact-email { font-size: 1.7rem; }
+}

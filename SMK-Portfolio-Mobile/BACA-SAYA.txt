@@ -1,0 +1,254 @@
+SMK PORTFOLIO MOBILE — MULAI DI SINI
+==================================
+Template untuk siswa DKV: fokus mendesain, bukan belajar programming.
+Gunakan satu halaman terlebih dahulu. Anda cukup mengganti gambar/tulisan,
+atau mengirim desain Figma ke AI lalu mengganti file hasilnya.
+
+1. BUKA TEMPLATE
+---------------
+Ekstrak ZIP (klik kanan > Extract All / Ekstrak Semua).
+Klik dua kali index.html untuk preview. Semua halaman dapat dibuka langsung.
+Simpan cadangan folder sebelum mengganti file. Jangan mengedit di dalam ZIP.
+File dibuka lewat VS Code/editor teks, bukan Microsoft Word.
+Aktifkan File name extensions di File Explorer agar nama file terlihat.
+Jangan sampai index.html berubah menjadi index.html.txt.
+
+2. PETA FILE: SATU HALAMAN, DUA FILE YANG DIGANTI
+----------------------------------------------
+Home      : index.html     + css/home.css
+Portfolio : portfolio.html + css/portfolio.css
+About     : about.html     + css/about.css
+Contact   : contact.html   + css/contact.css
+
+css/style.css adalah pengaturan BERSAMA: warna, font, tombol, kartu,
+header, dan navigasi. Kirim ke AI sebagai REFERENSI. Untuk mengubah satu
+halaman, minta AI mengedit HTML dan CSS halaman itu saja. Perubahan layout
+khusus halaman ditaruh di CSS halaman dengan awalan .page-home,
+.page-portfolio, .page-about, atau .page-contact bila perlu.
+
+images/profile.png = foto profil placeholder buatan AI, orang fiktif.
+images/karya-01.jpg sampai karya-06.jpg = contoh karya.
+Semua foto/karya perlu diganti sebelum portfolio pribadi dikumpulkan.
+
+JANGAN EDIT: manifest.json, service-worker.js, js/app.js, dan kedua ikon.
+Jangan mengubah nama/path file, menghapus link CSS, atau mengubah navigasi
+tanpa bantuan guru. Nama aplikasi ter-install tetap "Portfolio DKV".
+
+3. GANTI NAMA, TULISAN, DAN EMAIL
+-------------------------------
+Di editor, tekan Ctrl+F. Cari komentar:
+GANTI NAMA SISWA DI SINI / GANTI DESKRIPSI DI SINI / GANTI KARYA DI SINI.
+Ganti tulisan setelah komentar. Contoh <h2>Saya Alexandra Putri.</h2>:
+ganti Alexandra Putri, pertahankan <h2> dan </h2>.
+Ganti nama pada judul tab, deskripsi, header, footer, dan isi empat HTML.
+Inisial ap. juga boleh diganti. Nama dalam caption foto Home ikut diganti.
+Home memakai karya 01–02: judul/deskripsi di Home dan Portfolio harus sama.
+Ubah teks alt menjadi deskripsi gambar Anda untuk pengguna pembaca layar.
+Contact: cari alexandra@example.com. Ganti di teks dan kedua href mailto.
+Subjek Halo%20Alexandra juga boleh diganti (%20 adalah spasi).
+Tombol Contact membuka aplikasi email. Tidak ada formulir atau database.
+
+4. GANTI GAMBAR DAN WARNA
+------------------------
+Timpa profile.png dengan foto PNG sungguhan bernama sama. Foto contoh
+berukuran 1024 x 1536; gunakan foto dengan wajah di bagian tengah atas.
+Timpa karya-01.jpg hingga karya-06.jpg dengan karya JPG Anda.
+Ekspor gambar dari Figma, jangan hanya mengganti akhiran PNG menjadi JPG.
+Rasio karya contoh 4:3, ukuran 960 x 720. Usahakan gambar karya < 500 KB.
+Foto PNG bisa lebih besar; hindari mengunggah foto asli kamera puluhan MB.
+Nama file harus sama persis, termasuk huruf kecil dan nomor dua digit.
+
+Buka css/style.css. Lima pengaturan utama ada paling atas:
+--primary    = warna utama/tombol
+--background = latar halaman
+--text       = tulisan
+--card       = latar kartu
+--radius     = lengkungan sudut, contoh 24px
+Salin kode warna dari Figma. Contoh #6654ce. Pertahankan ; di akhir baris.
+Pastikan kontras tulisan jelas. Warna dekorasi tambahan ada pada CSS
+halaman/bagian berikutnya. Warna ikon dan layar pembuka aplikasi tetap
+memakai warna bawaan; siswa tidak perlu mengubah file PWA.
+
+5. SIAPKAN SCREENSHOT FIGMA
+--------------------------
+Gunakan satu halaman dulu, misalnya Home, pada lebar desain 390 px.
+Export frame lengkap sebagai PNG; untuk halaman panjang jangan potong
+bagian yang bisa di-scroll. Jika memakai screenshot, pastikan teks terbaca.
+Screenshot adalah REFERENSI DESAIN. Website tetap harus berisi teks,
+tombol, dan gambar terpisah, bukan satu gambar screenshot besar.
+Ekspor foto/ilustrasi/karya yang digunakan secara terpisah dari Figma.
+Tambahkan keterangan sederhana:
+- Halaman ini di-scroll ke bawah.
+- Tombol Jelajahi karya membuka Portfolio.
+- Foto profil memakai images/profile.png.
+- Gambar kartu pertama memakai images/karya-01.jpg.
+Jika ada desain desktop, kirim juga. Jika hanya mobile, minta AI membuat
+versi desktop yang rapi tanpa mengubah tujuan halaman.
+
+6. ALUR FIGMA -> AI -> FILE -> CEK DI HP
+--------------------------------------
+A. Salin folder project sebagai cadangan.
+B. Upload screenshot, HTML halaman, CSS halaman, dan style.css ke AI.
+   Contoh Home: index.html, home.css, style.css. Tambahkan gambar asli
+   jika perlu. AI boleh membaca style.css, tetapi jangan mengeditnya dulu.
+C. Salin PROMPT 1 di bawah. Isi nama halaman, nama file, dan tujuan tombol.
+D. Unduh dua file lengkap hasil AI. Ganti HTML di folder utama dan CSS
+   halaman di folder css. Jangan menaruh home.css di folder utama.
+   Jika hasil berupa ZIP, ekstrak dan salin file sesuai struktur folder.
+   Jika AI hanya memberi teks, minta file unduhan. Bila tidak tersedia,
+   salin SELURUH isi file ke editor, bukan potongan baris.
+E. Simpan dan refresh browser. Bandingkan dengan Figma.
+F. Kalau belum sesuai, kirim screenshot hasil browser, screenshot Figma,
+   dan DUA FILE TERBARU. Pakai PROMPT 2. Jangan mengirim versi cadangan.
+G. Home sudah sesuai? Baru lanjut Portfolio, About, lalu Contact.
+H. Perubahan navigasi bersama perlu diterapkan konsisten di empat HTML.
+   Untuk itu kirim semua HTML dan style.css dalam permintaan terpisah.
+
+PROMPT 1 — AI SIAP COPY: TERAPKAN DESAIN FIGMA
+-------------------------------------------
+Saya siswa SMK DKV, belum bisa coding. Saya memakai SMK-Portfolio-Mobile.
+Halaman yang diubah: [HOME / PORTFOLIO / ABOUT / CONTACT].
+HTML halaman: [index.html / portfolio.html / about.html / contact.html].
+CSS halaman: [home.css / portfolio.css / about.css / contact.css].
+Saya melampirkan screenshot Figma, HTML halaman, CSS halaman, style.css
+sebagai referensi, dan gambar asli jika diperlukan.
+Tujuan tombol dan gambar: [TULIS KETERANGAN SINGKAT DI SINI].
+
+Sesuaikan warna, layout, ukuran, jarak, foto, dan kartu mengikuti Figma.
+Utamakan smartphone 360–430 px, tetapi tetap rapi pada 320 px dan desktop.
+Pertahankan teks sebagai teks dan tombol sebagai link. Jangan menjadikan
+screenshot satu gambar besar sebagai halaman. Gunakan aset lokal images.
+Edit HTML halaman dan CSS halaman SAJA. style.css hanya referensi;
+jika perlu override, tulis di CSS halaman dengan selector .page-home,
+.page-portfolio, .page-about, atau .page-contact agar halaman lain aman.
+Jangan ubah navigasi bersama diam-diam; jelaskan jika desain membutuhkan
+perubahan navigasi dan minta empat file HTML untuk langkah tersebut.
+Pertahankan empat halaman, tujuan link, komentar GANTI NAMA/DESKRIPSI/KARYA,
+path CSS/gambar/JS, manifest, dan pendaftaran service worker.
+Jangan ubah manifest.json, service-worker.js, js/app.js, nama atau struktur
+file. Jangan membuat project baru. Hanya HTML/CSS sederhana, JavaScript
+vanilla bila benar-benar perlu. Dilarang framework, npm, Node.js, CDN,
+API, database, backend, font online, React, Vue, Next.js, atau Tailwind.
+Gunakan variabel warna yang sudah ada jika memungkinkan. Jangan tambah
+gambar atau dependency baru tanpa menjelaskan kebutuhan dan batas offline.
+Kembalikan DUA FILE LENGKAP yang dapat diunduh, bukan potongan kode.
+Sebutkan tempat menggantinya dengan bahasa sederhana.
+Jika file unduhan tidak didukung, berikan seluruh isi kedua file terpisah.
+Jangan meminta saya mencari atau menyisipkan baris kode.
+-------------------------------------------
+AKHIR PROMPT 1
+
+PROMPT 2 — AI SIAP COPY: PERBAIKI HASIL
+-------------------------------------
+Saya melampirkan screenshot Figma, screenshot hasil browser, dan HTML/CSS
+halaman TERBARU dari SMK-Portfolio-Mobile. Tolong perbaiki:
+1. [CONTOH: foto terlalu tinggi]
+2. [CONTOH: jarak judul dengan tombol terlalu jauh]
+3. [CONTOH: bagian bawah tertutup navigasi]
+Edit hanya HTML dan CSS halaman ini. style.css tetap referensi.
+Pertahankan file/teknologi/link/PWA dan komentar template. Jangan membuat
+project baru atau menambahkan dependency. Pastikan mobile dan desktop rapi.
+Kembalikan dua file lengkap yang siap menggantikan file lama dan sebutkan
+lokasinya. Jangan berikan potongan kode atau perubahan baris saja.
+-------------------------------------
+AKHIR PROMPT 2
+
+7. PREVIEW DAN PERIKSA MOBILE
+----------------------------
+Klik dua kali index.html untuk preview mudah; PWA belum aktif pada file lokal.
+Di Chrome laptop tekan F12 / Ctrl+Shift+I, lalu Ctrl+Shift+M untuk mode HP.
+Coba lebar 360, 390, dan 430 px; cek juga 320 px dan jendela desktop lebar.
+Periksa semua halaman: tidak geser ke kanan, teks terbaca, link bekerja,
+gambar tidak terpotong aneh, dan konten akhir tidak tertutup navigasi bawah.
+Navigasi aktif harus sesuai halaman. Header dan navigasi tetap konsisten.
+Pada desktop navigasi ada di atas. Jika tidak suka hasil AI, kembali ke
+folder cadangan lalu coba lagi dengan instruksi yang lebih spesifik.
+
+Untuk preview PWA lokal: VS Code + ekstensi Live Server (Ritwick Dey),
+klik kanan index.html > Open with Live Server. Gunakan localhost/127.0.0.1.
+Ekstensi ini hanya alat preview, bukan dependency website.
+Di HP asli, gunakan URL HTTPS setelah deploy. HTTP alamat IP laptop di
+Wi-Fi tidak mendukung service worker seperti localhost pada laptop.
+
+8. DESAIN DULU, PWA KEMUDIAN
+--------------------------
+Selama sering mengedit desain, preview langsung file HTML lebih mudah.
+Setelah desain selesai, baru deploy, buka online, lalu uji install/offline.
+Service worker menyimpan keempat halaman, empat CSS halaman, CSS bersama,
+JavaScript, manifest, foto, enam karya, dan ikon sejak kunjungan pertama.
+Tidak harus membuka tiap halaman dahulu untuk menyimpan aset utama.
+Tunggu penyimpanan selesai sebelum mencoba mode pesawat. Browser mungkin
+menghapus cache jika penyimpanan dibersihkan atau kapasitas terbatas.
+
+Jika siswa menambah gambar/file baru, minta guru membantu memasukkannya ke
+daftar cache service-worker.js; template awal sudah mencakup semua aset.
+Setelah memperbarui desain, buka setiap halaman saat online dan refresh
+agar salinan offline ikut diperbarui. Jika preview tampak memakai versi
+lama, guru dapat memeriksa Application > Service Workers/Cache Storage.
+
+11. DEPLOY KE VERCEL TANPA NPM / NODE.JS
+--------------------------------------
+Mintalah bantuan guru untuk membuat akun GitHub dan Vercel bila perlu.
+1) Di GitHub, buat repository baru, misalnya portfolio-nama-anda.
+2) Pilih Add file > Upload files. Unggah ISI folder SMK-Portfolio-Starter,
+   bukan ZIP-nya. Seret file dan folder css, js, images sekaligus.
+   index.html harus terlihat di tingkat utama repository. Simpan/Commit.
+3) Buka Vercel, masuk, pilih Add New > Project, lalu import repository itu.
+4) Framework Preset: pilih Other.
+5) Root Directory: tingkat yang berisi index.html (biarkan default jika
+   index.html sudah ada di tingkat utama).
+6) Build Command: aktifkan Override jika perlu lalu biarkan kosong.
+   Install Command: kosongkan jika diminta. Tidak ada perintah npm.
+7) Output Directory: gunakan . (titik) jika Override diperlukan, karena
+   file website ada langsung di root. Jangan pilih dist atau public.
+8) Klik Deploy. Setelah selesai, buka alamat HTTPS yang diberikan.
+9) Klik keempat halaman dan pastikan foto terlihat.
+Untuk memperbarui website, unggah file perubahan ke repository yang sama
+dan Commit. Vercel akan membuat deployment baru secara otomatis.
+Tidak perlu membeli domain untuk menggunakan alamat bawaan Vercel.
+Label menu dapat berubah. Panduan resmi:
+https://vercel.com/docs/builds/configure-a-build
+https://vercel.com/docs/git
+
+12. BUKA DAN INSTALL PWA DI ANDROID
+---------------------------------
+1) Dengan internet aktif, buka link HTTPS Vercel di Chrome Android.
+   Gunakan link hasil deploy, bukan file ZIP atau file HTML lokal.
+2) Tunggu seluruh gambar muncul. Untuk percobaan pertama, tunggu sekitar
+   10 detik dan kunjungi empat halaman; ini bukan jaminan untuk jaringan
+   lambat, jadi periksa offline dengan langkah di bawah.
+3) Buka menu tiga titik Chrome > Tambahkan ke layar utama > Install.
+   Pada versi tertentu, menu langsung bernama Install app/Instal aplikasi.
+4) Ikuti petunjuk. Ikon Portfolio DKV akan muncul di perangkat.
+5) Buka dari ikon tersebut: tampilannya memakai mode aplikasi (standalone).
+6) Coba mode pesawat, tutup lalu buka lagi aplikasinya. Klik keempat
+   halaman. Konten dan gambar utama seharusnya masih tampil.
+Email tetap memerlukan internet. Penyimpanan offline bisa hilang jika
+data situs/cache dibersihkan atau perangkat menghapus penyimpanan.
+
+Kalau opsi install belum muncul: gunakan Chrome, pastikan HTTPS,
+refresh halaman, dan tunggu lagi. Guru bisa memeriksa bagian Application
+di alat pengembang Chrome: Manifest, Service Workers, dan Cache Storage.
+Jika offline belum berhasil, online-kan lagi dan tunggu pemuatan selesai.
+Jika gambar baru belum muncul, buka halaman itu ketika online dan refresh.
+Halaman serta gambar akan diperbarui saat koneksi internet tersedia.
+Panduan resmi Android:
+https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid
+
+
+13. CHECKLIST SEBELUM DIKUMPULKAN
+-------------------------------
+[ ] Nama, inisial, deskripsi, dan email sudah diganti.
+[ ] Foto profil dan enam karya sudah diganti dengan milik sendiri.
+[ ] Desain mobile mengikuti Figma dan tombol memiliki tujuan jelas.
+[ ] Empat halaman nyaman di HP dan tetap rapi di desktop.
+[ ] Tidak ada teks terpotong atau geser horizontal.
+[ ] Semua link dan gambar bekerja; konten tidak tertutup navigasi.
+[ ] PWA sudah dicoba install dan offline dari HTTPS di HP.
+[ ] Folder cadangan disimpan.
+
+Catatan guru: CSS per halaman sengaja dipisahkan agar proses ganti file
+dengan AI lebih mudah. Siswa tetap cukup mengganti dua file untuk satu
+halaman. File bersama dipakai sebagai referensi, bukan diedit tiap langkah.
+Project menggunakan HTML, CSS, dan JavaScript vanilla saja. Tidak ada
+database, backend, API, dependency eksternal, npm, Node.js, atau build.

@@ -1,0 +1,9 @@
+/* PORTFOLIO SAJA — kirim file ini + portfolio.html ke AI. */
+.portfolio-work .project-grid { gap: 24px; }
+.sample-note { font-size: 0.8rem; margin-bottom: 36px; }
+@media (min-width: 600px) {
+  .portfolio-work .project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .portfolio-work .project-grid { grid-template-columns: repeat(3, 1fr); }
+}
